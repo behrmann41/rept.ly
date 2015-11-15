@@ -34,11 +34,21 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/LocationResource'
-  # MemoryDocument:
-  #   type: object
-  #   properties:
-  #     data:
-  #       $ref: '#/definitions/MemoryResource'
+  AnimalDocument:
+      type: object
+      properties:
+        data:
+          $ref: '#/definitions/AnimalResource'
+  ShelterDocument:
+      type: object
+      properties:
+        data:
+          $ref: '#/definitions/ShelterResource'
+  LocationDocument:
+      type: object
+      properties:
+        data:
+          $ref: '#/definitions/LocationResource'
   AnimalResource:
     type: object
     properties:
