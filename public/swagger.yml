@@ -6,12 +6,12 @@ info:
     #### Allows users to see exotic Animals
 basePath: /
 parameters:
-  year:
-    name: year
-    in: path
-    description: The year of the memories
-    type: integer
-    required: true
+#   year:
+#     name: year
+#     in: path
+#     description: The year of the memories
+#     type: integer
+#     required: true
 definitions:
   AnimalCollection:
     type: object
@@ -58,7 +58,7 @@ definitions:
       age:
         type: string
       type:
-        type: integer
+        type: string
   Error:
     type: object
     properties:
