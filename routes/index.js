@@ -25,6 +25,7 @@ router.get('/locations', function(req, res, next) {
       return console.error('error fetching client from pool', err);
     }
     client.query('SELECT * from locations', function(err, result) {
+      console.log(result, "RESULT")
       done();
       if (err) {
         return console.error('error running query', err);
